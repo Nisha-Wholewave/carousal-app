@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="./index.js"></script>
+  </head>
+  <body class="min-h-screen  pt-[250px]">
+    <div id="carousal" class="relative w-[640px] h-[640px] m-auto rounded overflow-hidden m-auto">
+      <button
+        id="prev"
+        class="absolute top-1/2 -translate-y-1/2 bg-black/50 text-white text-2xl py-2 px-3 cursor-pointer rounded left-2.5 z-50"
+      >
+        Prev
+      </button>
+      <div
+        id="carousal-track"
+        class="flex transition-transform duration-500 ease-in-out"
+      >
+        <img
+          src="./assets/images/img1.png"
+          alt="slide image #1"
+          class="slide active min-w-full h-full object-cover"
+        />
+        <img
+          src="./assets/images/img2.png"
+          alt="slide image #1"
+          class="slide min-w-full h-full object-cover"
+        />
+        <img
+        
+          src="./assets/images/img3.png"
+          alt="slide image #1"
+          class="slide min-w-full h-full object-cover"
+        />
+        <img
+          src="./assets/images/img4.png"
+          alt="slide image #1"
+          class="slide min-w-full h-full object-cover"
+        />
+      </div>
+      <button
+        id="next"
+        class="absolute top-1/2 -translate-y-1/2 bg-black/50 text-white text-2xl py-2 px-3 cursor-pointer right-2.5 z-50"
+      >
+        Next
+      </button>
+    </div>
+  </body>
+</html>
